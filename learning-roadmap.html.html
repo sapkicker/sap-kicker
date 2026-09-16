@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SAP Kicker - practical SAP CPI, SAP Cloud Integration and SAP Integration Suite tutorials, real-time scenarios, troubleshooting, interview preparation and mentoring.">
-<title>SAP Kicker</title>
+<meta name="description" content="A practical SAP CPI and SAP Cloud Integration learning roadmap from fundamentals to real-time projects, troubleshooting and interview preparation.">
+<title>SAP Kicker | SAP CPI Learning Roadmap</title>
 
 <style>
 :root{
@@ -442,6 +442,35 @@ section#contact{background:linear-gradient(135deg,#eef8ff 0%,#f5f1ff 100%)}
   .logo-text small{font-size:6.5px;letter-spacing:1.15px}
 }
 
+
+/* Learning roadmap page */
+.roadmap-hero{position:relative;padding:82px 0 62px;background:#07152f;color:#fff;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08)}
+.roadmap-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 85% 15%,rgba(20,184,212,.24),transparent 32%),radial-gradient(circle at 12% 80%,rgba(124,58,237,.22),transparent 34%),linear-gradient(135deg,#07152f 0%,#0d2552 58%,#10183b 100%)}
+.roadmap-hero-grid{position:relative;z-index:2}
+.roadmap-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+.roadmap-hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:14px 0 18px;letter-spacing:-2.5px;color:#ffffff!important;-webkit-text-fill-color:#ffffff;text-shadow:0 4px 22px rgba(0,0,0,.28)}
+.roadmap-hero p{font-size:18px;line-height:1.75;color:#f3f7ff!important;-webkit-text-fill-color:#f3f7ff;max-width:760px;text-shadow:0 1px 8px rgba(0,0,0,.2)}
+.roadmap-hero .badge{color:#ffffff;background:rgba(18,102,241,.42);border-color:rgba(255,255,255,.32);position:relative;z-index:3}
+.roadmap-hero .roadmap-actions,.roadmap-hero .roadmap-stats{position:relative;z-index:3}
+.roadmap-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.roadmap-panel{background:rgba(3,14,38,.78);border:1px solid rgba(255,255,255,.20);border-radius:24px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.30);backdrop-filter:blur(10px);position:relative;z-index:3}
+.roadmap-panel h3{margin:0 0 16px;color:#fff}.roadmap-panel ul{margin:0;padding-left:20px;color:#dce6f5;line-height:1.9}.roadmap-panel li::marker{color:#f2c94c}
+.roadmap-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.roadmap-stat{padding:16px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}.roadmap-stat strong{display:block;font-size:24px;color:#fff}.roadmap-stat span{font-size:12px;color:#b9c7dc}
+.roadmap-intro{padding:64px 0 28px;background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);border-top:1px solid #e7edf6}
+.roadmap-timeline{position:relative;padding:25px 0 75px}
+.roadmap-timeline::before{content:"";position:absolute;left:28px;top:30px;bottom:80px;width:2px;background:linear-gradient(#b7c8ef,#dbe5f6,#b7c8ef)}
+.roadmap-step{position:relative;padding-left:76px;margin:0 0 28px}
+.roadmap-num{position:absolute;left:7px;top:0;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #c9d6ef;box-shadow:0 8px 22px rgba(30,55,90,.12);font-weight:900;color:#3552a3;z-index:1}
+.roadmap-card{background:#fff;border:1px solid #e3eaf5;border-radius:22px;padding:28px;box-shadow:0 14px 40px rgba(31,55,90,.07)}
+.roadmap-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:12px}.roadmap-card h3{margin:0;font-size:24px}.level{font-size:11px;font-weight:900;letter-spacing:.9px;text-transform:uppercase;border-radius:999px;padding:7px 10px;background:#eef3ff;color:#3552a3;white-space:nowrap}
+.roadmap-card p{color:#5e6c82;line-height:1.7}.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.topic{padding:12px 13px;border:1px solid #e7edf6;border-radius:13px;background:#f9fbff;font-size:14px;color:#35445c}.topic strong{display:block;color:#16243b;font-size:13px;margin-bottom:3px}
+.roadmap-card .step-link{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:#3552a3;text-decoration:none;margin-top:4px}.roadmap-card .step-link:hover{text-decoration:underline}
+.learning-map{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.map-card{padding:20px;border-radius:18px;background:#fff;border:1px solid #e4ebf6;box-shadow:0 10px 30px rgba(31,55,90,.06)}.map-card .map-icon{font-size:28px}.map-card h3{font-size:16px;margin:12px 0 7px}.map-card p{font-size:13px;line-height:1.6;color:#66748a;margin:0}
+.roadmap-callout{margin:30px 0 72px;padding:32px;border-radius:24px;background:linear-gradient(135deg,#101d39,#1a2d55);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:28px}.roadmap-callout h2{margin:0 0 8px}.roadmap-callout p{margin:0;color:#d7e2f4;line-height:1.7}.roadmap-callout .btn{flex:none}
+.roadmap-faq{padding:0 0 70px}.roadmap-faq details{background:#fff;border:1px solid #e3eaf5;border-radius:16px;padding:17px 20px;margin:10px 0}.roadmap-faq summary{font-weight:800;cursor:pointer}.roadmap-faq p{color:#66748a;line-height:1.7;margin:12px 0 2px}
+@media(max-width:900px){.roadmap-hero-grid{grid-template-columns:1fr}.learning-map{grid-template-columns:repeat(2,1fr)}.topic-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.roadmap-hero{padding:52px 0 42px}.roadmap-hero h1{font-size:43px}.roadmap-stats{grid-template-columns:1fr}.roadmap-timeline::before{left:22px}.roadmap-step{padding-left:58px}.roadmap-num{left:0;width:44px;height:44px}.roadmap-card{padding:22px}.roadmap-card-top{display:block}.level{display:inline-block;margin-top:10px}.topic-grid,.learning-map{grid-template-columns:1fr}.roadmap-callout{display:block}.roadmap-callout .btn{margin-top:18px}}
+
 </style>
 </head>
 
@@ -455,334 +484,148 @@ section#contact{background:linear-gradient(135deg,#eef8ff 0%,#f5f1ff 100%)}
     </a>
     <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button>
     <nav id="nav">
-      <a href="learning-roadmap.html">Learn</a>
-      <a href="#videos">Videos</a>
-      <a href="#scenarios">Scenarios</a>
-      <a href="#troubleshooting">Troubleshooting</a>
-      <a href="#interview">Interviews</a>
-      <a href="#support">Support</a>
-      <a href="#contact">Contact</a>
+      <a href="learning-roadmap.html" aria-current="page">Learn</a>
+      <a href="index.html#videos">Videos</a>
+      <a href="index.html#scenarios">Scenarios</a>
+      <a href="index.html#troubleshooting">Troubleshooting</a>
+      <a href="index.html#interview">Interviews</a>
+      <a href="index.html#support">Support</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<main id="home">
-
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="badge">SAP Kicker</span>
-      <h1>SAP Kicker</h1>
-      <p class="hero-subtitle">SAP CPI Kicker</p>
-      <p>
-        Learn SAP CPI / SAP Cloud Integration through easy-to-understand tutorials,
-        real-time integration scenarios, troubleshooting techniques, interview preparation
-        and practical project guidance.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#videos">▶ Watch Free Tutorials</a>
-        <a class="btn btn-outline" href="#support">💬 Get Personal Support</a>
-      </div>
-    </div>
-
-    <div class="dashboard">
-      <div class="hero-image-wrap">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=85" alt="Modern technology infrastructure representing cloud integration" loading="eager">
-        <div class="image-overlay"><span>☁ Cloud Integration</span><span>↔ APIs & Systems</span></div>
-      </div>
-      <div class="dash-top">
-        <strong>Your CPI Learning Journey</strong>
-        <small><span class="dot"></span>Learn</small>
-      </div>
-      <div class="dash-card">
-        <strong>01 · Foundation</strong>
-        <div class="progress"><span></span></div>
-        <small>Architecture • iFlows • Adapters</small>
-      </div>
-      <div class="dash-card">
-        <strong>02 · Development</strong>
-        <div class="progress"><span style="width:52%"></span></div>
-        <small>Mapping • Groovy • Routing • APIs</small>
-      </div>
-      <div class="dash-card">
-        <strong>03 · Real Projects</strong>
-        <div class="progress"><span style="width:30%"></span></div>
-        <small>S/4HANA • SFTP • REST • Troubleshooting</small>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Who is this for?</span>
-      <h2>Learn SAP CPI with a practical mindset</h2>
-      <p>Whether you're starting from zero or already working on integration projects, follow a path that matches your goal.</p>
-    </div>
-
-    <div class="grid-4">
-      <div class="card"><div class="icon">🧑‍🎓</div><h3>Beginners</h3><p>Start with the fundamentals and progress step-by-step toward real integration scenarios.</p></div>
-      <div class="card"><div class="icon">👨‍💻</div><h3>Working Professionals</h3><p>Understand practical implementation, monitoring, troubleshooting and project approaches.</p></div>
-      <div class="card"><div class="icon">🎯</div><h3>Interview Candidates</h3><p>Prepare with technical concepts, scenario-based questions and project discussions.</p></div>
-      <div class="card"><div class="icon">🚀</div><h3>Career Changers</h3><p>Build practical SAP Integration skills and understand real-world expectations.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="learn" class="light">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Learning paths</span>
-      <h2>What you will learn</h2>
-      <p>Build knowledge from fundamentals through development, real-time integrations, production support and interviews.</p>
-    </div>
-
-    <div class="section-image-banner">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" alt="Technology circuit board representing integration and development" loading="lazy">
-      <div><strong>Build skills that connect systems.</strong><span>Learn architecture, development, APIs, transformations and production support.</span></div>
-    </div>
-
-    <div class="learning-grid">
-      <div class="card path">
-        <div class="path-number">1</div>
-        <h3>Foundation</h3>
-        <ul>
-          <li>SAP BTP & Integration Suite overview</li>
-          <li>Cloud Integration architecture</li>
-          <li>Tenants and environments</li>
-          <li>Integration packages & iFlows</li>
-          <li>Message processing & monitoring</li>
-        </ul>
-      </div>
-
-      <div class="card path">
-        <div class="path-number">2</div>
-        <h3>Integration Flow Development</h3>
-        <ul>
-          <li>Content Modifier, Router & Filter</li>
-          <li>Splitter, Gather & Multicast</li>
-          <li>Message Mapping</li>
-          <li>Groovy scripting</li>
-          <li>Exception handling</li>
-        </ul>
-      </div>
-
-      <div class="card path">
-        <div class="path-number">3</div>
-        <h3>Adapters & Connectivity</h3>
-        <ul>
-          <li>HTTP / REST / SOAP / OData</li>
-          <li>SFTP / IDoc / RFC / JDBC</li>
-          <li>Mail / AS2 / HTTPS</li>
-          <li>SuccessFactors & third-party systems</li>
-        </ul>
-      </div>
-
-      <div class="card path">
-        <div class="path-number">4</div>
-        <h3>Transformation</h3>
-        <ul>
-          <li>XML, JSON & CSV transformations</li>
-          <li>Message Mapping</li>
-          <li>XSLT</li>
-          <li>Groovy transformation</li>
-          <li>Data conversion & validation</li>
-        </ul>
-      </div>
-
-      <div class="card path">
-        <div class="path-number">5</div>
-        <h3>Production Support</h3>
-        <ul>
-          <li>Monitoring & Message Processing Logs</li>
-          <li>Error investigation</li>
-          <li>Authentication & certificate issues</li>
-          <li>Performance & retry concepts</li>
-          <li>Security fundamentals</li>
-        </ul>
-      </div>
-
-      <div class="card path">
-        <div class="path-number">6</div>
-        <h3>Interview & Career</h3>
-        <ul>
-          <li>Technical interview questions</li>
-          <li>Scenario-based questions</li>
-          <li>Project explanation</li>
-          <li>Resume & career guidance</li>
-          <li>Mock interview preparation</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="videos">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Free learning</span>
-      <h2>SAP CPI YouTube Tutorials</h2>
-      <p>Learn step-by-step through practical video lessons. Replace the buttons below with your actual YouTube playlist links.</p>
-    </div>
-
-    <div class="grid-3">
-      <div class="card"><div class="icon">▶️</div><h3>SAP CPI for Beginners</h3><p>Start from the basics and understand the platform before building integrations.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-      <div class="card"><div class="icon">🔌</div><h3>Adapters</h3><p>Learn HTTP, REST, SOAP, SFTP, OData and other connectivity options.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-      <div class="card"><div class="icon">💻</div><h3>Groovy & Mapping</h3><p>Understand scripting, transformations and practical message mapping.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-      <div class="card"><div class="icon">🛠️</div><h3>Troubleshooting</h3><p>Learn how to investigate integration failures and runtime errors.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-      <div class="card"><div class="icon">🎯</div><h3>Interview Questions</h3><p>Prepare for technical and scenario-based SAP CPI interviews.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-      <div class="card"><div class="icon">🏗️</div><h3>Real-Time Scenarios</h3><p>See how integration concepts come together in project-style examples.</p><br><a class="btn btn-outline" href="https://www.youtube.com/" target="_blank">Watch Playlist</a></div>
-    </div>
-  </div>
-</section>
-
-<section id="scenarios" class="light">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Project focused</span>
-      <h2>Real-Time Integration Scenarios</h2>
-      <p>Don't just learn what a component does. Learn when and why you would use it in a real integration.</p>
-    </div>
-
-    <div class="scenario-feature">
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=85" alt="Cyber technology network representing secure enterprise integration" loading="lazy">
-      <div><strong>Think like a project engineer.</strong><span>Explore integration patterns, failures, security and design decisions.</span></div>
-    </div>
-
-    <div class="grid-3">
-      <div class="scenario"><h3>S/4HANA → CPI → Third Party</h3><p>Understand extraction, transformation, routing, API calls and error handling.</p><div class="flow"><span>S/4HANA</span><b class="arrow">→</b><span>CPI</span><b class="arrow">→</b><span>API</span></div></div>
-      <div class="scenario"><h3>SFTP → CPI → SAP</h3><p>Process files, transform data and deliver records into an SAP system.</p><div class="flow"><span>SFTP</span><b class="arrow">→</b><span>CPI</span><b class="arrow">→</b><span>SAP</span></div></div>
-      <div class="scenario"><h3>REST → CPI → SAP</h3><p>Build API-driven integrations with validation, mapping and response handling.</p><div class="flow"><span>REST</span><b class="arrow">→</b><span>CPI</span><b class="arrow">→</b><span>SAP</span></div></div>
-      <div class="scenario"><h3>SuccessFactors → CPI</h3><p>Explore employee-data integration patterns and transformation approaches.</p><div class="flow"><span>SuccessFactors</span><b class="arrow">→</b><span>CPI</span></div></div>
-      <div class="scenario"><h3>Multiple Receivers</h3><p>Understand routing, multicast and independent processing for multiple targets.</p><div class="flow"><span>Source</span><b class="arrow">→</b><span>CPI</span><b class="arrow">→</b><span>Target A</span><span>Target B</span></div></div>
-      <div class="scenario"><h3>Error Handling & Retry</h3><p>Learn practical ways to design exception handling and investigate failures.</p><div class="flow"><span>iFlow</span><b class="arrow">→</b><span>Error</span><b class="arrow">→</b><span>Handling</span></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="troubleshooting">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Production support</span>
-      <h2>Stuck in your SAP CPI project?</h2>
-      <p>Use the troubleshooting center to understand common failures and develop a structured way to investigate problems.</p>
-    </div>
-
-    <div class="grid-4">
-      <div class="card"><div class="icon">🔴</div><h3>Connection Errors</h3><p>401, 403, SSL, authentication, timeout and connection problems.</p></div>
-      <div class="card"><div class="icon">🧩</div><h3>Mapping Errors</h3><p>Namespaces, missing fields, contexts, repeating nodes and mapping failures.</p></div>
-      <div class="card"><div class="icon">💻</div><h3>Groovy Errors</h3><p>Null values, XML/JSON parsing, date handling and script exceptions.</p></div>
-      <div class="card"><div class="icon">📊</div><h3>Monitoring</h3><p>Message processing logs, trace, failed messages and runtime investigation.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="interview" class="light">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Career preparation</span>
-      <h2>SAP CPI Interview Preparation</h2>
-      <p>Prepare to explain concepts and solve scenarios instead of simply memorizing definitions.</p>
-    </div>
-
-    <div class="grid-3">
-      <div class="card"><h3>Beginner Questions</h3><p>What is CPI? What is Integration Suite? What is an iFlow? What are adapters? What is Message Mapping?</p></div>
-      <div class="card"><h3>Intermediate Questions</h3><p>Exception handling, Groovy, ProcessDirect, Value Mapping, Router, Multicast, Splitter and transformations.</p></div>
-      <div class="card"><h3>Advanced Scenarios</h3><p>Security, OAuth, certificates, performance, large files, retry mechanisms and production architecture.</p></div>
-    </div>
-
-    <div class="card" style="margin-top:20px">
-      <h3>Example scenario</h3>
-      <p><strong>“You receive 100,000 records from an SFTP server. How would you design the integration?”</strong></p>
-      <p>Use scenario-based videos and articles to understand the reasoning behind the solution, trade-offs and troubleshooting approach.</p>
-    </div>
-  </div>
-</section>
-
-<section id="support" class="support">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Personal guidance</span>
-      <h2>Need Personal SAP CPI Support?</h2>
-      <p>Sometimes a tutorial isn't enough. If you are stuck on a concept, integration scenario, troubleshooting problem or interview preparation, you can request a one-to-one guidance session.</p>
-    </div>
-
-    <div class="support-visual">
-      <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Professionals collaborating on technical projects" loading="lazy">
-      <div><strong>Learn with guidance when you get stuck.</strong><span>Bring sanitized examples and questions; turn confusion into a clear next step.</span></div>
-    </div>
-
-    <div class="grid-3">
-      <div class="card"><div class="icon">💬</div><h3>CPI Doubt Clearing</h3><p>Discuss a specific SAP CPI concept or implementation approach.</p></div>
-      <div class="card"><div class="icon">🛠️</div><h3>Troubleshooting Guidance</h3><p>Work through errors and learn a structured troubleshooting approach.</p></div>
-      <div class="card"><div class="icon">🎯</div><h3>Interview Preparation</h3><p>Prepare using scenario-based technical discussions and project questions.</p></div>
-      <div class="card"><div class="icon">👨‍🏫</div><h3>1:1 Training</h3><p>Personalized sessions based on your learning objectives.</p></div>
-      <div class="card"><div class="icon">🚀</div><h3>Career Mentoring</h3><p>Guidance for professionals building their SAP Integration career.</p></div>
-      <div class="card"><div class="icon">🏗️</div><h3>Scenario Discussion</h3><p>Understand possible approaches to real integration requirements.</p></div>
-    </div>
-
-    <div style="margin-top:35px">
-      <a class="btn btn-primary" href="mailto:sapkicker@gmail.com?subject=SAP%20CPI%20Support%20Request">Request a Session</a>
-    </div>
-
-    <div class="price-note">
-      <strong>Professional and safe support:</strong> Please never share passwords, private keys, credentials, confidential company information, customer data or proprietary source code. Guidance should be based on sanitized examples.
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Why learn here?</span>
-      <h2>From concepts to confidence</h2>
-    </div>
-    <div class="grid-4">
-      <div class="card"><div class="icon">🎯</div><h3>Practical</h3><p>Focus on scenarios that resemble real integration requirements.</p></div>
-      <div class="card"><div class="icon">🧠</div><h3>Easy to Understand</h3><p>Complex concepts explained step-by-step in simple language.</p></div>
-      <div class="card"><div class="icon">🔧</div><h3>Troubleshooting Focus</h3><p>Learn how to investigate problems, not just build successful flows.</p></div>
-      <div class="card"><div class="icon">💼</div><h3>Career Focused</h3><p>Build skills useful for projects, support roles and interviews.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="light">
-  <div class="container contact-box">
+<main>
+<section class="roadmap-hero">
+  <div class="container roadmap-hero-grid">
     <div>
-      <span class="eyebrow">Contact</span>
-      <h2>Let's learn and solve SAP CPI challenges together.</h2>
-      <p>Have a question about SAP CPI, Integration Suite, learning, interviews or mentoring? Send your requirement and we'll review it.</p>
-      <p class="email">sapkicker@gmail.com</p>
-      <a class="btn btn-primary" href="mailto:sapkicker@gmail.com?subject=SAP%20CPI%20Training%20Enquiry">✉ Contact Us</a>
+      <span class="badge">SAP CPI Learning Roadmap</span>
+      <h1>From SAP CPI basics to real-time integration projects.</h1>
+      <p>Follow a practical learning path for SAP Cloud Integration: understand the platform, build iFlows, work with adapters and mappings, troubleshoot failures, and explain real project scenarios with confidence.</p>
+      <div class="roadmap-actions">
+        <a class="btn btn-primary" href="#foundation">🚀 Start with Foundation</a>
+        <a class="btn btn-outline" href="index.html">← Back to Home</a>
+      </div>
+      <div class="roadmap-stats">
+        <div class="roadmap-stat"><strong>8</strong><span>learning stages</span></div>
+        <div class="roadmap-stat"><strong>30+</strong><span>core topics</span></div>
+        <div class="roadmap-stat"><strong>1</strong><span>practical path</span></div>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>What can you contact us about?</h3>
+    <div class="roadmap-panel">
+      <h3>What you will build toward</h3>
       <ul>
-        <li>SAP CPI learning roadmap</li>
-        <li>Real-time integration scenarios</li>
-        <li>Troubleshooting guidance</li>
-        <li>Interview preparation</li>
-        <li>1:1 training and mentoring</li>
+        <li>Design and understand integration flows</li>
+        <li>Connect SAP and non-SAP systems</li>
+        <li>Transform XML and JSON payloads</li>
+        <li>Handle errors and monitor messages</li>
+        <li>Work through real-time scenarios</li>
+        <li>Prepare for scenario-based interviews</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="container faq">
+<section class="roadmap-intro">
+  <div class="container">
     <div class="section-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Frequently Asked Questions</h2>
+      <span class="eyebrow">The path</span>
+      <h2>Learn in the order that makes practical sense</h2>
+      <p>Each stage builds on the previous one. You can revisit any stage whenever a project or interview question requires it.</p>
     </div>
+    <div class="learning-map">
+      <a class="map-card" href="#foundation"><div class="map-icon">🧱</div><h3>01 · Foundation</h3><p>Platform, architecture, tenants, packages and iFlow basics.</p></a>
+      <a class="map-card" href="#development"><div class="map-icon">🛠️</div><h3>02 · Development</h3><p>Core flow steps, routing, splitting, subprocesses and APIs.</p></a>
+      <a class="map-card" href="#connectivity"><div class="map-icon">🔌</div><h3>03 · Connectivity</h3><p>HTTP, REST, SOAP, OData, SFTP, IDoc and business adapters.</p></a>
+      <a class="map-card" href="#transformation"><div class="map-icon">🔄</div><h3>04 · Transformation</h3><p>Message Mapping, Groovy, JSON/XML and value mapping.</p></a>
+      <a class="map-card" href="#operations"><div class="map-icon">🛡️</div><h3>05 · Operations</h3><p>Security material, monitoring, retries, errors and performance.</p></a>
+      <a class="map-card" href="#projects"><div class="map-icon">🏗️</div><h3>06 · Projects</h3><p>End-to-end scenarios that connect multiple enterprise systems.</p></a>
+      <a class="map-card" href="#interview"><div class="map-icon">🎯</div><h3>07 · Interview</h3><p>Technical, scenario-based and project-explanation preparation.</p></a>
+      <a class="map-card" href="#support"><div class="map-icon">🧭</div><h3>08 · Production Support</h3><p>Incident thinking, RCA, failures and practical troubleshooting.</p></a>
+    </div>
+  </div>
+</section>
 
-    <details><summary>Is the SAP CPI training free?</summary><p>A large collection of tutorials and learning resources is available through the YouTube channel. Personalized mentoring and selected services may be paid.</p></details>
-    <details><summary>Is this suitable for beginners?</summary><p>Yes. Start with the SAP CPI Learning Roadmap and progress through the learning levels.</p></details>
-    <details><summary>Do you provide one-to-one training?</summary><p>Yes. Personalized sessions can be requested based on your requirements.</p></details>
-    <details><summary>Do you help with interview preparation?</summary><p>Yes. Interview preparation can include technical concepts, scenario-based questions and project discussions.</p></details>
-    <details><summary>Can you help with a real project problem?</summary><p>Technical guidance can help you understand troubleshooting and implementation approaches. Do not share confidential company information, credentials, customer data or proprietary material.</p></details>
-    <details><summary>Do you provide job placement?</summary><p>No. The platform focuses on SAP Integration learning, mentoring and technical guidance.</p></details>
+<section class="roadmap-timeline">
+  <div class="container">
+    <article class="roadmap-step" id="foundation">
+      <div class="roadmap-num">01</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Foundation — understand the platform first</h3><p>Build the vocabulary and mental model you need before creating complex integrations.</p></div><span class="level">Beginner</span></div>
+        <div class="topic-grid"><div class="topic"><strong>SAP Integration Suite</strong>Where Cloud Integration fits in.</div><div class="topic"><strong>Architecture</strong>Tenant, runtime and integration concepts.</div><div class="topic"><strong>Artifacts</strong>Packages, iFlows and reusable content.</div><div class="topic"><strong>iFlow basics</strong>Sender, receiver and processing steps.</div><div class="topic"><strong>Lifecycle</strong>Design, deploy, monitor and maintain.</div><div class="topic"><strong>Terminology</strong>Learn the words used in projects.</div></div>
+        <a class="step-link" href="index.html#learn">See learning content on the home page →</a>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="development">
+      <div class="roadmap-num">02</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Integration Flow Development</h3><p>Learn the building blocks used to turn a business requirement into an executable integration flow.</p></div><span class="level">Beginner → Intermediate</span></div>
+        <div class="topic-grid"><div class="topic"><strong>Content Modifier</strong>Set headers, properties and body content.</div><div class="topic"><strong>Router</strong>Route messages using conditions.</div><div class="topic"><strong>Splitter / Gather</strong>Process and recombine messages.</div><div class="topic"><strong>ProcessDirect</strong>Connect reusable integration processes.</div><div class="topic"><strong>Local Integration Process</strong>Organize reusable logic.</div><div class="topic"><strong>Exception Subprocess</strong>Design controlled error handling.</div></div>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="connectivity">
+      <div class="roadmap-num">03</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Adapters & Connectivity</h3><p>Understand how CPI communicates with different SAP and non-SAP endpoints.</p></div><span class="level">Intermediate</span></div>
+        <div class="topic-grid"><div class="topic"><strong>HTTP / REST</strong>API-based integrations and requests.</div><div class="topic"><strong>SOAP</strong>Service-based enterprise integrations.</div><div class="topic"><strong>OData</strong>Connect to OData services.</div><div class="topic"><strong>SFTP</strong>File-based integration patterns.</div><div class="topic"><strong>IDoc</strong>SAP document-based integration.</div><div class="topic"><strong>Business adapters</strong>Explore SuccessFactors and other scenarios.</div></div>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="transformation">
+      <div class="roadmap-num">04</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Data Transformation</h3><p>Move beyond connectivity and learn how to shape data between source and target systems.</p></div><span class="level">Intermediate</span></div>
+        <div class="topic-grid"><div class="topic"><strong>Message Mapping</strong>Map source structures to target structures.</div><div class="topic"><strong>Groovy</strong>Use scripts for custom processing.</div><div class="topic"><strong>XML / JSON</strong>Understand common payload formats.</div><div class="topic"><strong>Converters</strong>Transform message representations.</div><div class="topic"><strong>Value Mapping</strong>Translate values between systems.</div><div class="topic"><strong>Validation</strong>Check data before downstream processing.</div></div>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="operations">
+      <div class="roadmap-num">05</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Security & Operations</h3><p>Learn the operational skills that make integrations maintainable in real environments.</p></div><span class="level">Intermediate → Advanced</span></div>
+        <div class="topic-grid"><div class="topic"><strong>Credentials</strong>Manage endpoint authentication securely.</div><div class="topic"><strong>Certificates</strong>Understand certificate-based connectivity.</div><div class="topic"><strong>Security Material</strong>Use the platform's security assets.</div><div class="topic"><strong>Monitoring</strong>Trace and inspect message processing.</div><div class="topic"><strong>Retries</strong>Think about recoverable failures.</div><div class="topic"><strong>Performance</strong>Design flows with efficiency in mind.</div></div>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="projects">
+      <div class="roadmap-num">06</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Real-Time Integration Projects</h3><p>Turn concepts into end-to-end scenarios and learn to explain the business flow, technical flow and error path.</p></div><span class="level">Advanced Practice</span></div>
+        <div class="topic-grid"><div class="topic"><strong>S/4HANA → CPI</strong>Send SAP business data to another system.</div><div class="topic"><strong>SFTP → CPI → SAP</strong>Process inbound files and deliver data.</div><div class="topic"><strong>REST → CPI → SAP</strong>Build API-driven integration.</div><div class="topic"><strong>SuccessFactors → CPI</strong>Work through an SAP cloud scenario.</div><div class="topic"><strong>Multiple receivers</strong>Route one source to multiple targets.</div><div class="topic"><strong>Error paths</strong>Design what happens when a step fails.</div></div>
+        <a class="step-link" href="index.html#scenarios">Explore scenario topics →</a>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="interview">
+      <div class="roadmap-num">07</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Interview & Career Preparation</h3><p>Practice explaining concepts and solving scenarios instead of memorizing isolated definitions.</p></div><span class="level">All levels</span></div>
+        <div class="topic-grid"><div class="topic"><strong>Beginner questions</strong>Core CPI concepts and terminology.</div><div class="topic"><strong>Intermediate questions</strong>Adapters, mappings and flow design.</div><div class="topic"><strong>Advanced questions</strong>Security, errors and architecture.</div><div class="topic"><strong>Scenario questions</strong>Choose a design for a business case.</div><div class="topic"><strong>Project explanation</strong>Explain source, target and processing.</div><div class="topic"><strong>Resume readiness</strong>Describe skills accurately and clearly.</div></div>
+        <a class="step-link" href="index.html#interview">Open interview preparation on the home page →</a>
+      </div>
+    </article>
+
+    <article class="roadmap-step" id="support">
+      <div class="roadmap-num">08</div><div class="roadmap-card">
+        <div class="roadmap-card-top"><div><h3>Production Support & Troubleshooting</h3><p>Develop a repeatable way to investigate failures, isolate the cause and document the resolution.</p></div><span class="level">Advanced Practice</span></div>
+        <div class="topic-grid"><div class="topic"><strong>Message failures</strong>Read logs and identify the failing step.</div><div class="topic"><strong>Authentication</strong>Investigate credentials and access issues.</div><div class="topic"><strong>Certificates</strong>Check certificate-related connectivity problems.</div><div class="topic"><strong>Mapping errors</strong>Trace source-to-target data issues.</div><div class="topic"><strong>Groovy errors</strong>Understand script failures and inputs.</div><div class="topic"><strong>RCA</strong>Document cause, fix and prevention.</div></div>
+        <a class="step-link" href="index.html#troubleshooting">Open troubleshooting topics →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="roadmap-callout">
+      <div><h2>Ready to start building?</h2><p>Begin with the foundation, then use the free tutorials and scenario content on SAP Kicker to practice each stage.</p></div>
+      <a class="btn btn-primary" href="index.html#videos">▶ Watch Free Tutorials</a>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap-faq">
+  <div class="container faq">
+    <div class="section-head"><span class="eyebrow">FAQ</span><h2>How to use this roadmap</h2></div>
+    <details><summary>Do I need SAP experience before starting?</summary><p>No. The roadmap starts with fundamentals and gradually moves toward implementation and support topics.</p></details>
+    <details><summary>Should I learn Groovy before adapters?</summary><p>Not necessarily. Follow the stages in order, then return to Groovy when a project requires custom processing.</p></details>
+    <details><summary>How should I practice each stage?</summary><p>Use a simple requirement, draw the source-to-target flow, build the iFlow, test with realistic payloads, monitor the message and document what happens when a step fails.</p></details>
+    <details><summary>Can I jump directly to interview preparation?</summary><p>You can, but interview answers become much easier to explain when you understand the underlying flow design, connectivity, transformation and troubleshooting concepts.</p></details>
   </div>
 </section>
 
@@ -791,38 +634,23 @@ section#contact{background:linear-gradient(135deg,#eef8ff 0%,#f5f1ff 100%)}
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <strong>SAP Kicker</strong><br>
-        <small>Practical SAP CPI / Cloud Integration Learning</small>
-      </div>
+      <div><strong>SAP Kicker</strong><br><small>Practical SAP CPI / Cloud Integration Learning</small></div>
       <div class="footer-links">
         <a href="learning-roadmap.html">Learning</a>
-        <a href="#videos">YouTube</a>
-        <a href="#scenarios">Scenarios</a>
-        <a href="#support">Mentoring</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#videos">YouTube</a>
+        <a href="index.html#scenarios">Scenarios</a>
+        <a href="index.html#support">Mentoring</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
-
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> This website provides educational content, technical guidance and mentoring related to SAP Integration.
-      Information is provided for educational purposes and should be evaluated according to your organization's architecture,
-      security policies, SAP documentation and project requirements. Please do not share confidential company information,
-      credentials, passwords, private keys, customer data or proprietary source code.
-    </div>
-
+    <div class="disclaimer"><strong>Disclaimer:</strong> This website provides educational content, technical guidance and mentoring related to SAP Integration. Information is provided for educational purposes and should be evaluated according to your organization's architecture, security policies, SAP documentation and project requirements. Please do not share confidential company information, credentials, passwords, private keys, customer data or proprietary source code.</div>
     <p style="font-size:12px;margin-top:25px">© 2026 SAP Kicker. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("nav").classList.toggle("open");
-}
-document.querySelectorAll("nav a").forEach(a=>{
-  a.addEventListener("click",()=>document.getElementById("nav").classList.remove("open"));
-});
+function toggleMenu(){document.getElementById("nav").classList.toggle("open");}
+document.querySelectorAll("nav a").forEach(a=>{a.addEventListener("click",()=>document.getElementById("nav").classList.remove("open"));});
 </script>
-
 </body>
 </html>
